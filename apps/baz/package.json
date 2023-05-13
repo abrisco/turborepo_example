@@ -1,0 +1,16 @@
+{
+    "name": "@turborepro/baz",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "echo build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "@turborepro/foo": "workspace:*"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

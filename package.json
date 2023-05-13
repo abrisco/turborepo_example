@@ -1,0 +1,16 @@
+{
+  "name": "turborepro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "turbo": "1.9.4",
+    "pnpm": "8.5.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
