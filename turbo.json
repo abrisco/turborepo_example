@@ -3,9 +3,19 @@
     "pipeline": {
         "build": {
             "dependsOn": [
-                "^build"
+                "^build",
+                "^prisma-generate"
+            ],
+            "outputs": [
+                "./dist/**"
             ],
             "cache": false
+        },
+        "prisma-generate": {
+            "cache": false,
+            "outputs": [
+                "prisma/*.js"
+            ]
         },
         "test": {
             "dependsOn": [

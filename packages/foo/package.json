@@ -1,13 +1,22 @@
 {
-    "name": "@turborepro/foo",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "echo build",
-        "test": "echo \"Error: no test specified\" && exit 1"
+    "dependencies": {
+        "@prisma/client": "4.16.2"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+    "devDependencies": {
+        "prisma": "4.16.2",
+        "typescript": "5.1.6"
+    },
+    "files": [
+        "prisma",
+        "src"
+    ],
+    "main": "src/index",
+    "name": "@turborepro/foo",
+    "scripts": {
+        "build": "rm -rf ./dist && tsc",
+        "format": "pnpm run lint --fix",
+        "lint": "eslint --ext .js,.ts,.jsx,.tsx .",
+        "prisma-generate": "prisma generate && rm -f prisma/package.json"
+    },
+    "types": "src/index"
 }
